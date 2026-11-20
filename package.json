@@ -1,0 +1,10 @@
+{
+  "name": "doggie-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.16.1",
+  "scripts": {
+    "build": "pnpm --filter ./apps/* --filter ./packages/* run build",
+    "overlay:build": "cd native/overlay && cargo build --release"
+  }
+}

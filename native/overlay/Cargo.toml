@@ -1,0 +1,14 @@
+[package]
+name = "doggie-overlay"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.29"
+wgpu = "0.19"
+pollster = "0.3"
+bytemuck = { version = "1.19", features = ["derive"] }
+image = { version = "0.25.10", default-features = false, features = ["webp", "png"] }
+
+[profile.release]
+opt-level = 2

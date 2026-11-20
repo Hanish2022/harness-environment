@@ -1,0 +1,15 @@
+node_modules/
+dist/
+target/
+*.log
+.pnpm-store/
+
+# Downloaded/compiled at `doggie voice setup` time, not source — see
+# ARCHITECTURE.md Phase 3/6 for why these aren't committed or packaged.
+services/speech-worker/.venv/
+services/speech-worker/.models/
+services/speech-worker/bin/
+services/speech-worker/voices/
+
+dist-package/
+.doggie-prebuilt
